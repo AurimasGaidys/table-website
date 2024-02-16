@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ItemContent } from "./items/itemBag";
 import { UserContent } from "./items/userContent";
 import { PositionHelper } from "./helpers/positionHelper";
+import { Draggable } from "./helpers/draggable";
 
 const Table2 = (props: any) => {
   return (
@@ -12,7 +13,9 @@ const Table2 = (props: any) => {
         <UserContent name={"Aurimas"} />
       </PositionHelper>
       <PositionHelper x={230} y={600} rotation={10}>
-        <ItemContent name={"Secret stuff"} />
+        <Draggable>
+          <ItemContent name={"Secret stuff"} />
+        </Draggable>
       </PositionHelper>
     </div>
   );

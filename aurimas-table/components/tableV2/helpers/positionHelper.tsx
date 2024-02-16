@@ -1,5 +1,5 @@
 interface Props {
-  children: any;
+  children: JSX.Element;
   x: number;
   y: number;
   rotation: number;
