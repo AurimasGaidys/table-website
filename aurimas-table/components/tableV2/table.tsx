@@ -3,12 +3,17 @@ import React from "react";
 import Image from "next/image";
 import { ItemContent } from "./items/itemBag";
 import { UserContent } from "./items/userContent";
+import { PositionHelper } from "./helpers/positionHelper";
 
 const Table2 = (props: any) => {
   return (
     <div className="w-[3000px] h-[3000px] bg-[url('/kd/bg.jpg')]">
-      <UserContent name={"Aurimas"} />
-      <ItemContent name={"Secret stuff"} x={0} y={300} rotation={10} />
+      <PositionHelper x={0} y={100} rotation={0}>
+        <UserContent name={"Aurimas"} />
+      </PositionHelper>
+      <PositionHelper x={230} y={600} rotation={10}>
+        <ItemContent name={"Secret stuff"} />
+      </PositionHelper>
     </div>
   );
 };

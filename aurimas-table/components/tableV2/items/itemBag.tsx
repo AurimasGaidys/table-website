@@ -1,8 +1,5 @@
 interface LeadListProps {
   name: string;
-  x: number;
-  y: number;
-  rotation: number;
 }
 
 export const ItemContent = ({ name }: LeadListProps) => {

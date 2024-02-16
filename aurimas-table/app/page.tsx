@@ -13,8 +13,8 @@ export default function Home() {
   );
   const xPosAnim = useTransform(
     scrollYProgress,
-    [0, 0.1, 0.3, 1],
-    [0, 0, 150, 150]
+    [0, 0.1, 0.11, 0.3, 1],
+    [0, 0, 150, 170, 300]
   );
 
   const rotAnim = useTransform(
@@ -25,17 +25,17 @@ export default function Home() {
 
   return (
     <main className="flex min-h-[9999px] flex-col items-center justify-between">
-        <motion.div
-          style={{
-            position: "fixed",
-            top: yPosAnim,
-            x: xPosAnim,
-            rotate: rotAnim,
-          }}
-          transition={{ type: "spring" }}
-        >
-          <Table2 />
-        </motion.div>
+      <motion.div
+        style={{
+          position: "fixed",
+          top: yPosAnim,
+          x: xPosAnim,
+          rotate: rotAnim,
+        }}
+        transition={{ type: "spring" }}
+      >
+        <Table2 />
+      </motion.div>
     </main>
   );
 }
