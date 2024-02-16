@@ -4,7 +4,7 @@ interface LeadListProps {
 
 export const ItemContent = ({ name }: LeadListProps) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-[390px]">
       <div className="h-[25px]" />
       <div className="bg-bottom bg-no-repeat h-[188px] w-[263px] bg-[url('/kd/item_tag.png')] bg-cover z-40 flex items-start pl-[78px] pt-[10px]">
         <div

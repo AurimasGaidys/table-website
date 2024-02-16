@@ -13,7 +13,7 @@ const Table2 = (props: any) => {
       <PositionHelper x={0} y={100} rotation={0}>
         <UserContent name={"Aurimas"} />
       </PositionHelper>
-      <PositionHelper x={230} y={600} rotation={15}>
+      <PositionHelper x={1577} y={600} rotation={15}>
         <Draggable>
           <ItemContent name={"Secret stuff"} />
         </Draggable>
