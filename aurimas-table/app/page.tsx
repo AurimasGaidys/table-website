@@ -8,18 +8,18 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
   const yPosAnim = useTransform(
     scrollYProgress,
-    [0, 0.4, 1],
-    [100, -1500, -1500]
+    [0, 0.3, 0.4, 1],
+    [100, -700, -900, -1500]
   );
   const xPosAnim = useTransform(
     scrollYProgress,
-    [0, 0.1, 0.11, 0.3, 1],
-    [0, 0, 150, 170, 300]
+    [0, 0.2, 0.21, 0.6, 1],
+    [0, 0, 150, 170, 170]
   );
 
   const rotAnim = useTransform(
     scrollYProgress,
-    [0, 0.1, 0.11, 0.3, 0.31, 1],
+    [0, 0.2, 0.21, 0.6, 0.61, 1],
     [0, 0, -15, -15, 0, 0]
   );
 
