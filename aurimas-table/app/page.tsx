@@ -1,6 +1,7 @@
 "use client";
 
 import Table from "@/components/table/table";
+import Table2 from "@/components/tableV2/table";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
   const xPosAnim = useTransform(
     scrollYProgress,
     [0, 0.1, 0.3, 1],
-    [100, 100, -1500, -1500]
+    [0, 0, 150, 150]
   );
 
   const rotAnim = useTransform(
@@ -23,8 +24,7 @@ export default function Home() {
   );
 
   return (
-    <main className="flex min-h-[9999px] flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex bg-[#333333]">
+    <main className="flex min-h-[9999px] flex-col items-center justify-between">
         <motion.div
           style={{
             position: "fixed",
@@ -34,10 +34,8 @@ export default function Home() {
           }}
           transition={{ type: "spring" }}
         >
-          <Table />
+          <Table2 />
         </motion.div>
-        <div></div>
-      </div>
     </main>
   );
 }
