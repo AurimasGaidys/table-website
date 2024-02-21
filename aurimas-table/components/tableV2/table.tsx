@@ -18,7 +18,17 @@ const Table2 = (props: any) => {
           <ItemContent name={"Secret stuff"} />
         </Draggable>
       </PositionHelper>
-      <PositionHelper x={-150} y={1300} rotation={0}>
+      <PositionHelper x={1877} y={100} rotation={15}>
+        <Draggable>
+          <ItemContent name={"Secret stuff"} />
+        </Draggable>
+      </PositionHelper>
+      <PositionHelper x={2177} y={-400} rotation={15}>
+        <Draggable>
+          <ItemContent name={"Secret stuff"} />
+        </Draggable>
+      </PositionHelper>
+      <PositionHelper x={2177} y={200} rotation={0}>
         <Notebook />
       </PositionHelper>
     </div>
